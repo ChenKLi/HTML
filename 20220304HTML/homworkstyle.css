@@ -29,6 +29,10 @@ h2::after {
   margin: 10px;
 }
 
+.item:hover {
+  color: red;
+}
+
 .item img {
   width: 100%;
   border-radius: 6px;
@@ -38,10 +42,10 @@ h2::after {
 .item h3 {
   cursor: pointer;
 }
-/* 
+
 .item h3:hover {
   color: red;
-} */
+}
 
 span {
   margin-top: 12px;
@@ -64,7 +68,7 @@ span {
   text-align: center;
 }
 
-/* .button:hover {
+.button:hover {
   background-color: rgb(145, 20, 20);
   cursor: pointer;
-} */
+}
