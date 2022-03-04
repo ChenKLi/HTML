@@ -1,0 +1,16 @@
+.wrap {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 300px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+}
