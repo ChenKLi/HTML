@@ -3,24 +3,51 @@
   margin: 0;
 }
 
+
+/* flex */
+
+/* 主軸 vs 交叉軸 */
+
 .wrap {
-  width: 500px;
+  
+  /* width: 960px; */
   height: 500px;
   background-color: gray;
   display: flex;
-  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin: auto;
 }
-
 .item {
-  width: 100px;
-  height: 100px;
+  width: 652px;
+  height: 400px;
   background-color: brown;
   color: blanchedalmond;
   margin: 4px;
 }
+.i1{
+  width: 200px;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.i2{
+  background-color: blue;
+}
+
+/* box-sizing example */
+/* .box {
+  width: 200px;
+  font-size: 20px;
+  background-color: aqua;
+  margin: 20px;
+  padding: 20px;
+  border: 20px solid blue;
+  box-sizing: border-box;
+}  */
+
+/* ------------------------------------------------- */
 
 /* box-sizeing練習 */
-
 /* .container {
   display: flex;
   width: 960px;
@@ -37,6 +64,8 @@
   background-color: brown;
   text-align: center;
 } */
+
+/* --------------------------------------------------- */
 
 /* 偽元素 */
 
@@ -55,15 +84,3 @@ p::after {
   background: red;
   margin: auto;
 }
-
-
-
-.box {
-  width: 200px;
-  font-size: 20px;
-  background-color: aqua;
-  margin: 20px;
-  padding: 20px;
-  border: 20px solid blue;
-  box-sizing: border-box;
-} */
