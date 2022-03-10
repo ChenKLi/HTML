@@ -1,0 +1,23 @@
+li {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  margin: 1px;
+  text-align: center;
+  list-style: none;
+  font-size: 50px;
+}
+
+li:nth-child(36) {
+  position: relative;
+  background-color: brown;
+  left: 50px;
+}
+
+li:nth-child(38) {
+  position: relative;
+  background-color: brown;
+  right: 50px;
+  z-index: -1;
+}
