@@ -1,35 +1,40 @@
-.part1 {
+.emailAdress_area {
+  position: relative;
+  top: 120px;
   width: 100%;
   height: 700px;
   background-color: aquamarine;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  z-index: -1;
 }
 
-.part1 .background {
+/* leftArea */
+
+.emailAdress_area .background {
   width: 90%;
   display: flex;
   margin: 0 auto;
 }
 
-.part1 .background .text {
+.emailAdress_area .background .text {
   width: 50%;
   padding-right: 50px;
 }
 
-.part1 .background .text h2 {
+.emailAdress_area .background .text h2 {
   font-size: 250%;
   line-height: 60px;
   font-weight: 700;
 }
 
-.part1 .background .text h2 span {
+.emailAdress_area .background .text h2 span {
   display: block;
   color: goldenrod;
 }
 
-.part1 .background .text p {
+.emailAdress_area .background .text p {
   padding-right: 50px;
   font-size: 106.25%;
   letter-spacing: 1px;
@@ -37,12 +42,43 @@
   margin-bottom: 50px;
 }
 
-.part1 .background .pic1 {
+.emailSubmit
+
+/* rightArea */
+
+.emailAdress_area .background .pic1 {
   width: 50%;
 }
-.part1 .background .pic1 img {
+.emailAdress_area .background .pic1 img {
   width: 481px;
   height: 350px;
 }
 
-/* email input 部分還沒處理 */
+.emailSubmit {
+  display: flex;
+  align-items: flex-end;
+}
+
+.emailSubmit input {
+  width: 300px;
+  height: 50px;
+}
+
+.emailSubmit .button {
+  width: 150px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.emailSubmit .button a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgb(29, 29, 255);
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+}
