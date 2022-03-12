@@ -1,13 +1,31 @@
+*,
+body {
+  font-family: "Notosans2";
+}
+a {
+  text-decoration: none;
+}
+
+h2 {
+  line-height: 1.4em;
+  font-size: 2.3em;
+}
+span {
+  display: block;
+}
+
 header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  box-shadow: 0 -20px 10px black;
 }
 
 header .wrap {
   width: 100%;
   background-color: black;
+  height: 120px;
 }
 
 header .wrap .header-top {
@@ -77,6 +95,9 @@ nav ul {
   align-content: center;
 }
 
+nav ul li {
+  margin: 2px;
+}
 nav ul li a {
   text-decoration: none;
   color: black;
@@ -103,7 +124,9 @@ header .wrap .header-bottom .button a {
   text-align: center;
 }
 
-.emailAdress_area {
+/* Section_EmailAddressArea */
+
+.EmailAdressArea {
   width: 100%;
   height: 700px;
   background-color: aquamarine;
@@ -113,31 +136,30 @@ header .wrap .header-bottom .button a {
   margin-top: 120px;
 }
 
-/* leftArea */
+/* EmailAddressArea_Text */
 
-.emailAdress_area .background {
+.EmailAdressArea .background {
   width: 90%;
   display: flex;
   margin: 0 auto;
 }
 
-.emailAdress_area .background .text {
+.EmailAdressArea .background .text {
   width: 50%;
   padding-right: 50px;
 }
 
-.emailAdress_area .background .text h2 {
+.EmailAdressArea .background .text h2 {
   font-size: 250%;
   line-height: 60px;
   font-weight: 700;
 }
 
-.emailAdress_area .background .text h2 span {
-  display: block;
+.EmailAdressArea .background .text h2 span {
   color: goldenrod;
 }
 
-.emailAdress_area .background .text p {
+.EmailAdressArea .background .text p {
   padding-right: 30px;
   font-weight: bold;
   font-size: 106.25%;
@@ -147,12 +169,12 @@ header .wrap .header-bottom .button a {
   margin-bottom: 60px;
 }
 
-/* rightArea */
+/* EmailAddressArea_Pic */
 
-.emailAdress_area .background .pic1 {
+.EmailAdressArea .background .pic1 {
   width: 50%;
 }
-.emailAdress_area .background .pic1 img {
+.EmailAdressArea .background .pic1 img {
   width: 481px;
   height: 350px;
 }
@@ -184,4 +206,242 @@ header .wrap .header-bottom .button a {
   font-size: 14px;
   text-align: center;
   line-height: 50px;
+}
+
+/* Section_InformationTitle */
+
+.informationTitle {
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+
+.information {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.informationTitle p {
+  font-size: 18px;
+  line-height: 2em;
+  color: #324255;
+}
+
+.informationTitle span {
+  display: block;
+}
+
+/* Section_SameInformationTagInContent */
+.container {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.textArea {
+  width: 50%;
+}
+
+.imgArea {
+  width: 50%;
+}
+
+.imgArea img {
+  padding: 20px;
+  width: 80%;
+}
+
+.iconWave {
+  width: 63px;
+  height: 16px;
+  border-top: 8px solid black;
+  margin-bottom: 5px;
+}
+
+/* Section_InformationContent */
+
+.informationContent {
+  width: 100%;
+  height: 500px;
+  background-color: blanchedalmond;
+}
+
+.informationContent .textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.informationContent .textArea p {
+  padding-right: 30px;
+  line-height: 2em;
+}
+
+.informationContent .textArea ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: flex-start;
+  height: 100px;
+  width: 480px;
+  margin-left: -1.5em;
+}
+.informationContent .textArea ul li {
+  margin-bottom: 15px;
+}
+
+.informationContent .textArea .secret a {
+  text-decoration: none;
+  color: rgb(43, 43, 243);
+}
+
+.secondPart {
+  background-color: rgb(231, 164, 231);
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.thirdPart {
+  background-color: rgb(141, 238, 165);
+}
+.fourthPart {
+  background-color: rgb(165, 186, 248);
+}
+
+/* moreService */
+
+.moreService {
+  width: 100%;
+  height: 900px;
+  background-color: rgb(209, 209, 209);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.moreService .wrap {
+  width: 90%;
+  height: 90%;
+  text-align: center;
+}
+
+.moreService .surviceItems {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.moreService .surviceItems .item {
+  width: 33.3333%;
+  height: 45%;
+}
+.moreService .surviceItems .item h3 {
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+}
+.moreService .surviceItems .item p {
+  text-align: left;
+  padding: 0 25px;
+  line-height: 1.8em;
+}
+
+.moreService .surviceItems .item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0px 12px black;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+/* popularBrand */
+
+.popularBrand {
+  width: 100%;
+  height: 650px;
+  background-color: rgb(163, 248, 174);
+}
+
+.popularBrand .wrap {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+.popularBrand .wrap h2 {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 2em;
+}
+
+.popularBrand span {
+  display: inline;
+  color: rgb(75, 75, 255);
+}
+
+.popularBrand .wrap .brandNavbar {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.popularBrand .wrap .brandNavbar .brand {
+  width: 20%;
+  height: 154px;
+  border-bottom: 1px solid rgb(163, 156, 156);
+}
+
+.popularBrand .wrap .brandNavbar .brand img {
+  width: 100%;
+}
+
+.popularBrand .wrap .brandNavbar .brand img:hover {
+  border-bottom: 4px solid rgb(99, 161, 241);
+}
+
+.popularBrand .wrap .brandInformation {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: -50px;
+}
+
+.popularBrand .wrap .brandInformation .textArea {
+  width: 40%;
+}
+
+.popularBrand .wrap .brandInformation .textArea p {
+  margin-top: 50px;
+  line-height: 2em;
+}
+
+.popularBrand .wrap .brandInformation .textArea span {
+  display: block;
+  margin-top: 5em;
+}
+
+.popularBrand .wrap .brandInformation .imgArea {
+  width: 60%;
+  overflow: hidden;
+}
+
+.popularBrand .wrap .brandInformation .imgArea img {
+  padding: 30px;
+  width: 100%;
 }
