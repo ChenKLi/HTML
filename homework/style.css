@@ -134,12 +134,13 @@ header .wrap .header-bottom .button a {
 
 .EmailAdressArea {
   width: 100%;
-  height: 700px;
+  /* height: 700px; */
   background-color: aquamarine;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   margin-top: 120px;
+  justify-content: center;
 }
 
 /* EmailAddressArea_Text */
@@ -147,7 +148,7 @@ header .wrap .header-bottom .button a {
 .EmailAdressArea .background {
   width: 90%;
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .EmailAdressArea .background .text {
@@ -177,12 +178,14 @@ header .wrap .header-bottom .button a {
 
 /* EmailAddressArea_Pic */
 
-.EmailAdressArea .background .pic1 {
+.EmailAdressArea .background .pic {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.EmailAdressArea .background .pic1 img {
-  width: 481px;
-  height: 350px;
+.EmailAdressArea .background .pic img {
+  width: 90%;
 }
 
 .emailSubmit {
@@ -193,12 +196,14 @@ header .wrap .header-bottom .button a {
 .emailSubmit input {
   width: 300px;
   height: 50px;
+  margin-bottom: 20px;
 }
 
 .emailSubmit .button {
   width: 150px;
   height: 50px;
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .emailSubmit .button a {
@@ -242,10 +247,10 @@ header .wrap .header-bottom .button a {
 /* Section_SameInformationTagInContent */
 .container {
   width: 90%;
-  height: 500px;
   display: flex;
   margin: 0 auto;
   align-items: center;
+  padding: 50px 0;
 }
 
 .textArea {
@@ -257,7 +262,6 @@ header .wrap .header-bottom .button a {
 }
 
 .imgArea img {
-  padding: 20px;
   width: 80%;
 }
 
@@ -268,11 +272,9 @@ header .wrap .header-bottom .button a {
   margin-bottom: 5px;
 }
 
-/* Section_InformationContent */
-
 .informationContent {
   width: 100%;
-  height: 500px;
+
   background-color: blanchedalmond;
 }
 
@@ -377,7 +379,6 @@ header .wrap .header-bottom .button a {
 
 .popularBrand {
   width: 100%;
-  height: 650px;
   background-color: rgb(163, 248, 174);
 }
 
@@ -400,14 +401,12 @@ header .wrap .header-bottom .button a {
 
 .popularBrand .wrap .brandNavbar {
   width: 100%;
-  height: 30%;
   display: flex;
   justify-content: center;
 }
 
 .popularBrand .wrap .brandNavbar .brand {
   width: 20%;
-  height: 154px;
   border-bottom: 1px solid rgb(163, 156, 156);
 }
 
@@ -421,17 +420,22 @@ header .wrap .header-bottom .button a {
 
 .popularBrand .wrap .brandInformation {
   width: 100%;
-  height: 70%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  margin-top: -50px;
 }
 
 .popularBrand .wrap .brandInformation .textArea {
   width: 40%;
 }
+.popularBrand .wrap .brandInformation .textArea a {
+  display: inline-block;
+  margin-top: 20px;
+}
 
+.popularBrand .wrap .brandInformation .textArea span {
+  margin-bottom: 30px;
+}
 .popularBrand .wrap .brandInformation .textArea p {
   margin-top: 50px;
   line-height: 2em;
@@ -475,7 +479,7 @@ header .wrap .header-bottom .button a {
 
 .demoInformation .wrap h2 .numBackground {
   position: relative;
-  opacity: 0.9;
+  z-index: 2;
 }
 
 .demoInformation .wrap h2 .numBackground::before {
