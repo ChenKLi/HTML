@@ -1,0 +1,15 @@
+:root {
+  --papa: blue;
+  --hello: green;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  font-size: 50px;
+  background-color: var(--papa);
+}
+
+.parent {
+  border: 10px solid var(--hello);
+}

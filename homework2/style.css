@@ -67,6 +67,7 @@ span {
   padding: 10px;
 }
 
+/* navItem hover等於a和navList被摸到 */
 .navItem:hover .navList {
   display: block;
 }

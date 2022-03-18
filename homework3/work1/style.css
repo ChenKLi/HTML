@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contorlFun {
+  width: 1200px;
+  height: 900px;
+}
+
+.wrap {
+  position: relative;
+  width: 1200px;
+  height: 900px;
+}
+
+.bgImg {
+  position: absolute;
+  z-index: -1;
+}
+
+.main-title {
+  display: inline-block;
+  color: white;
+  width: 300px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.main-title .title {
+  background-color: red;
+  font-size: 30px;
+  text-align: center;
+}
+.main-title .content {
+  background-color: black;
+  padding: 15px;
+}
+
+.main-title p {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.updateIfo {
+  padding: 10px;
+  background-color: rgb(202, 198, 198);
+  display: inline-block;
+}
+.updateIfo .title {
+  color: red;
+  font-weight: 800;
+}
+.updateIfo .contentText .text h4 {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 2px;
+  font-weight: 300;
+}
+
+.updateIfo .contentText .text p {
+  font-size: 14px;
+}
