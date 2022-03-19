@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+span.skill {
+  display: block;
+}
+
+span.otherClass {
+  display: block;
+}
+
+.wrap {
+  width: 750px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.teacherInformation {
+  width: 600px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 10px 75px;
+  border: 1px solid black;
+}
+
+.title {
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.pic {
+  width: 33.3333%;
+}
+
+img.photo {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrap {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .teacherInformation {
+    width: 580px;
+    padding: 0 20px;
+    margin: 10px;
+  }
+
+  .title {
+    display: flex;
+    padding-bottom: 20px;
+  }
+}
