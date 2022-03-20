@@ -3,87 +3,270 @@
   padding: 0;
 }
 
+.titleSpan {
+  font-size: 30px;
+}
+section {
+  height: 900px;
+  width: 1300px;
+}
 .wrap {
-  margin: 0 auto;
-  position: relative;
   width: 960px;
-  height: 812px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-.bgImg {
-  width: 695px;
-  height: 430px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  position: relative;
-}
-.imgLink {
-  display: inline-block;
-  z-index: 1;
-}
-.imgLink img {
-  width: 695px;
-  height: 430px;
+  margin: auto;
 }
 
-.titleWrap {
+/* mainTitle left */
+
+.mainTitle {
+  margin-top: 20px;
+
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.titleArea .title {
+  text-align: center;
+  background-color: red;
+  color: white;
+  display: block;
+  width: 300px;
   position: relative;
-  right: 430px;
+  font-size: 70px;
+  box-sizing: border-box;
+  font-weight: 300;
+  padding: 5px 0;
+}
+
+.contentArea {
+  position: relative;
+}
+.contentArea h3 {
+  margin-bottom: 10px;
+}
+.contentArea .content {
+  box-sizing: border-box;
+  position: relative;
+  background-color: black;
+  color: white;
+  width: 300px;
+  font-size: 20px;
+  padding: 20px;
+  z-index: 3;
+}
+
+.contentArea .bgImg {
+  position: absolute;
+  top: 0;
+  left: 100px;
   z-index: 2;
 }
 
-.mainTitle {
-  display: inline-block;
-  color: white;
-  width: 300px;
+.contentArea .bgImg .icon {
+  width: 40px;
+  height: 30px;
   position: absolute;
-}
-
-.mainTitle .title {
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: red;
-  font-size: 30px;
-  text-align: center;
-}
-.mainTitle .content {
-  background-color: black;
-
-  padding: 15px;
 }
 
-.mainTitle p {
-  margin-top: 5px;
-  font-size: 14px;
-  line-height: 2em;
+.title ::after {
+  content: "";
+  width: 400px;
+  height: 300px;
+  display: inline-block;
+  position: absolute;
+  background-color: rgb(196, 196, 196, 0.2);
+  left: 500px;
+  top: 50px;
 }
 
 .updateInfoWrap {
+  width: 650px;
+  background-color: rgb(236, 236, 236);
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  top: 180px;
+  left: 30px;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
-.updateIfo {
-  padding: 10px;
-  background-color: rgb(202, 198, 198);
-  display: inline-block;
-}
-.updateIfo .title {
+.titleText {
+  padding-bottom: 10px;
   color: red;
-  font-weight: 800;
 }
-.updateIfo .contentText .text h4 {
+
+.contentText .text {
+  line-height: 1.5em;
+}
+
+.contentText .text h4 {
+  display: inline-block;
+  padding: 0 5px;
   background-color: black;
   color: white;
-  display: inline-block;
-  padding: 2px;
   font-weight: 300;
 }
 
-.updateIfo .contentText .text p {
-  font-size: 14px;
+.titleText h3 {
+  display: inline;
+  font-size: 20px;
+}
+.titleText h3::after {
+  content: "";
+  width: 440px;
+  height: 7.5px;
+  display: inline-block;
+  border-top: 2px solid red;
+  margin-left: 10px;
+}
+
+.contentText .text p {
+  font-size: 15px;
+  margin: 5px 0px 5px 20px;
+  text-indent: -9px;
+}
+
+.contentText .text p::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  top: -2.5px;
+}
+
+/* mainTitle right */
+.mainTitleRight .mainTitle {
+  margin-top: 20px;
+
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.mainTitleRight .titleArea {
+  position: relative;
+  left: 600px;
+}
+
+.mainTitleRight .titleArea .title {
+  text-align: center;
+  background-color: red;
+  color: white;
+  display: block;
+  width: 300px;
+  position: relative;
+  font-size: 70px;
+  box-sizing: border-box;
+  font-weight: 300;
+  padding: 5px 0;
+}
+
+.mainTitleRight .contentArea {
+  position: relative;
+}
+
+.mainTitleRight .contentArea .content {
+  box-sizing: border-box;
+  position: relative;
+  background-color: black;
+  color: white;
+  width: 300px;
+  font-size: 18px;
+  padding: 20px;
+  z-index: 3;
+  left: 600px;
+}
+
+.mainTitleRight .contentArea h3 {
+  margin-bottom: 10px;
+}
+
+.mainTitleRight .contentArea .bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.mainTitleRight .contentArea .bgImg .icon {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: red;
+}
+
+.mainTitleRight .title ::after {
+  content: "";
+  width: 500px;
+  height: 450px;
+  display: inline-block;
+  position: absolute;
+  background-color: rgb(196, 196, 196, 0.2);
+  left: -300px;
+  top: 30px;
+}
+
+.mainTitleRight .updateInfoWrap {
+  width: 650px;
+  background-color: rgb(236, 236, 236);
+  position: relative;
+  z-index: 3;
+  top: 150px;
+  left: 35s0px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.mainTitleRight .titleText {
+  padding-bottom: 10px;
+  color: red;
+}
+
+.mainTitleRight .contentText .text {
+  line-height: 1.5em;
+}
+
+.mainTitleRight .contentText .text h4 {
+  display: inline-block;
+  padding: 0 5px;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+}
+
+.mainTitleRight .titleText h3 {
+  display: inline;
+  font-size: 20px;
+}
+.mainTitleRight .titleText h3::after {
+  content: "";
+  width: 440px;
+  height: 7.5px;
+  display: inline-block;
+  border-top: 2px solid red;
+  margin-left: 10px;
+}
+
+.mainTitleRight .contentText .text p {
+  font-size: 15px;
+  margin: 5px 0px 5px 20px;
+  text-indent: -9px;
+}
+
+.mainTitleRight .contentText .text p::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  top: -2.5px;
 }
