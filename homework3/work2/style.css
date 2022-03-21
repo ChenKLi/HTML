@@ -17,30 +17,98 @@ span.otherClass {
   margin: auto;
 }
 
+.wordsLink {
+  text-decoration: none;
+  color: rgb(250, 152, 152);
+}
+
 .teacherInformation {
-  width: 600px;
+  width: 700px;
   box-sizing: border-box;
-  padding: 0 20px;
-  margin: 10px 75px;
+  padding: 20px 30px;
+  margin: 10px 25px;
   border: 1px solid black;
 }
 
 .title {
-  border-bottom: 1px solid black;
+  display: flex;
   box-sizing: border-box;
   padding-bottom: 20px;
 }
 
+.introduce {
+  padding-top: 10px;
+  line-height: 3em;
+}
+
+.skill::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  border-top: 2px solid red;
+}
+
+.iconLinks {
+  margin-top: 10px;
+}
+
+.iconLinks a {
+  margin-right: 10px;
+}
+
 .pic {
-  width: 33.3333%;
+  width: 30%;
 }
 
 img.photo {
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  width: 90%;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.content {
+  border-top: 1px solid black;
+  box-sizing: border-box;
+  padding: 30px 0px;
+  height: 40%;
+}
+.middlePadding {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.otherClass {
+  display: inline-block;
+}
+
+.otherClass ::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 532px;
+  height: 5px;
+  border-top: 1px solid black;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links .link {
+  display: inline-block;
+  color: rgb(255, 60, 60);
+  border: 1px solid rgb(255, 60, 60);
+  padding: 10px 15px;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.linksInformation {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -57,7 +125,6 @@ img.photo {
   }
 
   .title {
-    display: flex;
-    padding-bottom: 20px;
+    align-items: center;
   }
 }
