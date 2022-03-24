@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        padding: 0 15px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .row {
+        margin: 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      [class*="row-col-"] > .col {
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+      }
+
+      .row-cols-1 > .item {
+        width: 100%;
+      }
+      .row-cols-2 > .item {
+        width: 50%;
+      }
+      .row-cols-3 > .item {
+        width: 33.33333%;
+      }
+      .row-cols-4 > .item {
+        width: 25%;
+      }
+      .row-cols-5 > .item {
+        width: 20%;
+      }
+      .row-cols-6 > .item {
+        width: 16.666666%;
+      }
+
+      @media screen and (min-width: 768px) {
+        .row-cols-md-1 > .item {
+          width: 100%;
+        }
+        .row-cols-md-2 > .item {
+          width: 50%;
+        }
+        .row-cols-md-3 > .item {
+          width: 33.33333%;
+        }
+        .row-cols-md-4 > .item {
+          width: 25%;
+        }
+        .row-cols-md-5 > .item {
+          width: 20%;
+        }
+        .row-cols-md-6 > .item {
+          width: 16.666666%;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        .row-cols-lg-1 > .item {
+          width: 100%;
+        }
+        .row-cols-lg-2 > .item {
+          width: 50%;
+        }
+        .row-cols-lg-3 > .item {
+          width: 33.33333%;
+        }
+        .row-cols-lg-4 > .item {
+          width: 25%;
+        }
+        .row-cols-lg-5 > .item {
+          width: 20%;
+        }
+        .row-cols-lg-6 > .item {
+          width: 16.666666%;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .row-cols-xl-1 > .item {
+          width: 100%;
+        }
+        .row-cols-xl-2 > .item {
+          width: 50%;
+        }
+        .row-cols-xl-3 > .item {
+          width: 33.33333%;
+        }
+        .row-cols-xl-4 > .item {
+          width: 25%;
+        }
+        .row-cols-xl-5 > .item {
+          width: 20%;
+        }
+        .row-cols-xl-6 > .item {
+          width: 16.666666%;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .row-cols-Dmd-1 > .item {
+          width: 100%;
+        }
+        .row-cols-Dmd-2 > .item {
+          width: 50%;
+        }
+        .row-cols-Dmd-3 > .item {
+          width: 33.33333%;
+        }
+        .row-cols-Dmd-4 > .item {
+          width: 25%;
+        }
+        .row-cols-Dmd-5 > .item {
+          width: 20%;
+        }
+        .row-cols-Dmd-6 > .item {
+          width: 16.666666%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos
+          incidunt doloribus eius minus optio dolorum deserunt qui quisquam
+          veritatis.
+        </div>
+        <div class="item">
+          Autem ad sint illo, ipsam consequuntur architecto ea odit perferendis
+          odio, nobis animi, cupiditate libero neque quos. Quia, modi
+          repudiandae.
+        </div>
+        <div class="item">
+          Sed sit mollitia laudantium inventore labore dicta adipisci odio
+          suscipit veritatis, natus debitis aliquid. Pariatur iste ratione
+          consectetur adipisci eaque.
+        </div>
+        <div class="item">
+          Deleniti eius ipsum unde, consequuntur dicta, laboriosam sunt
+          excepturi repellat, accusantium cumque non atque expedita dolor!
+          Eligendi quaerat eius ab?
+        </div>
+        <div class="item">
+          Deleniti eius ipsum unde, consequuntur dicta, laboriosam sunt
+          excepturi repellat, accusantium cumque non atque expedita dolor!
+          Eligendi quaerat eius ab?
+        </div>
+        <div class="item">
+          Deleniti eius ipsum unde, consequuntur dicta, laboriosam sunt
+          excepturi repellat, accusantium cumque non atque expedita dolor!
+          Eligendi quaerat eius ab?
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
